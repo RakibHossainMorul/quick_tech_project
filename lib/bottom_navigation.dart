@@ -60,7 +60,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
             _buildNavItem(Icons.home, 'Home', 0),
             _buildNavItem(Icons.sell_outlined, 'Add Nilam', 1),
             _buildNavItem(Icons.category_outlined, 'Category', 2),
-            const SizedBox(width: 30),
+            //const SizedBox(width: 30),
+            const Padding(
+              padding: EdgeInsets.only(top: 30),
+              child: Text(
+                "Post Ad",
+                style: TextStyle(color: Colors.blue, fontSize: 12),
+              ),
+            ),
             _buildNavItem(Icons.card_giftcard_outlined, 'Packages', 3),
             _buildNavItem(Icons.chat, 'Message', 4),
             _buildNavItem(Icons.person, 'Profile', 5),
