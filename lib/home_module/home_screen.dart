@@ -55,38 +55,42 @@ class _HomeScreenState extends State<HomeScreen> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.circular(80),
                           border: Border.all(
                             color: Colors.amber, // Set the color of the border
-                            width: 1.5, // Set the width of the border
+                            width: 2, // Set the width of the border
                           ),
                         ),
                         child: Padding(
                           padding: const EdgeInsets.only(left: 15),
-                          child: TextField(
-                            controller: _searchController,
-                            decoration: InputDecoration(
-                              hintText: 'What are you looking for?',
-                              // Add a clear button to the search bar
-                              suffixIcon: Container(
-                                decoration: const BoxDecoration(
-                                  color:
-                                      Colors.amber, // Set the background color
-                                  shape: BoxShape
-                                      .circle, // Optional: Set the shape of the button
-                                ),
-                                child: IconButton(
-                                  icon: const Icon(
-                                    Icons.search,
-                                    size: 30,
+                          child: SizedBox(
+                            //for reduce input field height
+                            height: 48,
+                            child: TextField(
+                              controller: _searchController,
+                              decoration: InputDecoration(
+                                hintText: 'What are you looking for?',
+                                // Add a clear button to the search bar
+                                suffixIcon: Container(
+                                  decoration: const BoxDecoration(
+                                    color: Colors
+                                        .amber, // Set the background color
+                                    shape: BoxShape
+                                        .circle, // Optional: Set the shape of the button
                                   ),
-                                  color:
-                                      Colors.white, // Set the color of the icon
-                                  onPressed: () {},
+                                  child: IconButton(
+                                    icon: const Icon(
+                                      Icons.search,
+                                      size: 40,
+                                    ),
+                                    color: Colors
+                                        .white, // Set the color of the icon
+                                    onPressed: () {},
+                                  ),
                                 ),
+                                border: InputBorder
+                                    .none, // Remove the default border
                               ),
-                              border:
-                                  InputBorder.none, // Remove the default border
                             ),
                           ),
                         ),

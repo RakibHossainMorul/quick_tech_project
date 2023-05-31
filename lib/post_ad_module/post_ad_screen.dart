@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../home_module/slider_widget.dart';
-
 class PostAdScreen extends StatelessWidget {
   const PostAdScreen({super.key});
 
@@ -12,7 +10,7 @@ class PostAdScreen extends StatelessWidget {
         title: const Text("Post Ad"),
       ),
       body: const Center(
-        child: SliderScreen(),
+        child: Text('Ad Post Screen'),
       ),
     );
   }
