@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:text_scroll/text_scroll.dart';
 import '../location/location_screen.dart';
+import 'slider_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -48,29 +49,41 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               //Adding Search Bar
               Padding(
-                padding: const EdgeInsets.only(left: 10, top: 5),
+                padding: const EdgeInsets.only(left: 9, top: 5, right: 5),
                 child: Row(
                   children: [
                     Expanded(
-                      // Use a Material design search bar
                       child: Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
+                          borderRadius: BorderRadius.circular(25.0),
                           border: Border.all(
                             color: Colors.amber, // Set the color of the border
-                            width: 3, // Set the width of the border
+                            width: 1.5, // Set the width of the border
                           ),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 8.0),
+                          padding: const EdgeInsets.only(left: 15),
                           child: TextField(
                             controller: _searchController,
                             decoration: InputDecoration(
                               hintText: 'What are you looking for?',
                               // Add a clear button to the search bar
-                              suffixIcon: IconButton(
-                                icon: const Icon(Icons.clear),
-                                onPressed: () => _searchController.clear(),
+                              suffixIcon: Container(
+                                decoration: const BoxDecoration(
+                                  color:
+                                      Colors.amber, // Set the background color
+                                  shape: BoxShape
+                                      .circle, // Optional: Set the shape of the button
+                                ),
+                                child: IconButton(
+                                  icon: const Icon(
+                                    Icons.search,
+                                    size: 30,
+                                  ),
+                                  color:
+                                      Colors.white, // Set the color of the icon
+                                  onPressed: () {},
+                                ),
                               ),
                               border:
                                   InputBorder.none, // Remove the default border
@@ -79,31 +92,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                    // Add a search icon or button outside the border of the search bar
-                    Padding(
-                      padding: const EdgeInsets.all(15),
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          color: Colors.amber, // Set the background color
-                          shape: BoxShape
-                              .circle, // Optional: Set the shape of the button
-                        ),
-                        child: IconButton(
-                          icon: const Icon(
-                            Icons.search,
-                            size: 35,
-                          ),
-                          color: Colors.white, // Set the color of the icon
-                          onPressed: () {},
-                        ),
-                      ),
-                    )
                   ],
                 ),
               ),
+
               //Adding Category Secton
               Padding(
-                padding: const EdgeInsets.only(right: 40, top: 10),
+                padding: const EdgeInsets.only(right: 40, top: 10, bottom: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -129,6 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
+                    const SizedBox(width: 5),
                     InkWell(
                       onTap: () {},
                       child: Row(
@@ -155,6 +151,8 @@ class _HomeScreenState extends State<HomeScreen> {
               Expanded(
                 child: ListView(
                   children: [
+                    //Adding slider widget
+                    const SliderScreen(),
                     Padding(
                       padding: const EdgeInsets.only(top: 8.0),
                       child: Row(
@@ -164,6 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "Nilam Ad",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          const SizedBox(width: 15),
                           Row(
                             children: const [
                               Icon(
@@ -182,11 +181,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
+
                     SizedBox(
                       height: 365,
                       child: GridView.count(
                         primary: false,
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.only(
+                            top: 10, left: 5, right: 5, bottom: 5),
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 10,
                         crossAxisCount: 2,
