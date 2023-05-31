@@ -29,7 +29,7 @@ class UserProfileScreen extends StatelessWidget {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
+              flex: 3,
               child: Center(
                 child: Column(
                   children: const [
@@ -51,7 +51,7 @@ class UserProfileScreen extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 7,
+              flex: 8,
               child: ListView(
                 children: [
                   _buildListTile(
