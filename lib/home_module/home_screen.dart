@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:text_scroll/text_scroll.dart';
 import '../location/location_screen.dart';
+import '../reusable_widget/product_widget.dart';
 import 'slider_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -189,43 +190,41 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 365,
                       child: GridView.count(
+                        physics: const NeverScrollableScrollPhysics(),
                         primary: false,
                         padding: const EdgeInsets.only(
-                            top: 10, left: 5, right: 5, bottom: 5),
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
+                            top: 2, left: 5, right: 5, bottom: 5),
+                        crossAxisSpacing: 7,
+                        mainAxisSpacing: 7,
                         crossAxisCount: 2,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[100],
-                            child:
-                                const Text("He'd have you all unravel at the"),
+                        children: const <Widget>[
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
                         ],
                       ),
@@ -239,6 +238,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "Member Ad",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          const SizedBox(width: 15),
                           Row(
                             children: const [
                               Icon(
@@ -260,42 +260,41 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 365,
                       child: GridView.count(
+                        physics: const NeverScrollableScrollPhysics(),
                         primary: false,
-                        padding: const EdgeInsets.all(20),
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
+                        padding: const EdgeInsets.only(
+                            top: 2, left: 5, right: 5, bottom: 5),
+                        crossAxisSpacing: 7,
+                        mainAxisSpacing: 7,
                         crossAxisCount: 2,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[100],
-                            child:
-                                const Text("He'd have you all unravel at the"),
+                        children: const <Widget>[
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
                         ],
                       ),
@@ -309,6 +308,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "All Restaurant Offer",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          const SizedBox(width: 15),
                           Row(
                             children: const [
                               Icon(
@@ -330,42 +330,41 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 365,
                       child: GridView.count(
+                        physics: const NeverScrollableScrollPhysics(),
                         primary: false,
-                        padding: const EdgeInsets.all(20),
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
+                        padding: const EdgeInsets.only(
+                            top: 2, left: 5, right: 5, bottom: 5),
+                        crossAxisSpacing: 7,
+                        mainAxisSpacing: 7,
                         crossAxisCount: 2,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[100],
-                            child:
-                                const Text("He'd have you all unravel at the"),
+                        children: const <Widget>[
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
                         ],
                       ),
@@ -379,6 +378,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "All Shop Discount",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          const SizedBox(width: 15),
                           Row(
                             children: const [
                               Icon(
@@ -400,42 +400,41 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 365,
                       child: GridView.count(
+                        physics: const NeverScrollableScrollPhysics(),
                         primary: false,
-                        padding: const EdgeInsets.all(20),
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
+                        padding: const EdgeInsets.only(
+                            top: 2, left: 5, right: 5, bottom: 5),
+                        crossAxisSpacing: 7,
+                        mainAxisSpacing: 7,
                         crossAxisCount: 2,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[100],
-                            child:
-                                const Text("He'd have you all unravel at the"),
+                        children: const <Widget>[
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
                         ],
                       ),
@@ -449,6 +448,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "New Ad",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
+                          const SizedBox(width: 15),
                           Row(
                             children: const [
                               Icon(
@@ -470,49 +470,49 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(
                       height: 365,
                       child: GridView.count(
+                        physics: const NeverScrollableScrollPhysics(),
                         primary: false,
-                        padding: const EdgeInsets.all(20),
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 10,
+                        padding: const EdgeInsets.only(
+                            top: 2, left: 5, right: 5, bottom: 5),
+                        crossAxisSpacing: 7,
+                        mainAxisSpacing: 7,
                         crossAxisCount: 2,
-                        children: <Widget>[
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[100],
-                            child:
-                                const Text("He'd have you all unravel at the"),
+                        children: const <Widget>[
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.all(8),
-                            color: Colors.teal[200],
-                            child: const Text('Heed not the rabble'),
+                          ProductViewWidget(
+                            imageUrl:
+                                'https://picsum.photos/seed/picsum/200/300',
+                            date: '22-05-2023',
+                            price: 1500,
+                            title: "Product Title",
                           ),
                         ],
                       ),
                     ),
+                    const SizedBox(height: 20),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
