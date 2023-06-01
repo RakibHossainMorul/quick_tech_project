@@ -59,7 +59,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             _buildNavItem(Icons.home, 'Home', 0),
-            _buildNavItem(Icons.sell_outlined, 'Add Nilam', 1),
+            _buildNavItem(Icons.sell_outlined, 'Nilam Ad', 1),
             _buildNavItem(Icons.category_outlined, 'Category', 2),
             //const SizedBox(width: 30),
             const Padding(
