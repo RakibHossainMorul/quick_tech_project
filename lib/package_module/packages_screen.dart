@@ -22,7 +22,7 @@ class PackageScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 10.0, bottom: 20.0),
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          //  padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: const <Widget>[
               SizedBox(height: 20),

@@ -6,13 +6,13 @@ class PackageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 55),
+      padding: const EdgeInsets.only(left: 56),
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(color: Colors.black, width: 1),
           borderRadius: BorderRadius.circular(5),
         ),
-        width: 260,
+        width: 250,
         child: Column(
           children: [
             Container(

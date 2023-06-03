@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quick_tech_project/home_module/home_screen.dart';
 import 'package:quick_tech_project/profile_module/dashboard_screen.dart';
+import 'package:quick_tech_project/sign_in_sign_up_module/Screens/Login/login_screen.dart';
 import 'buyer_chat_screen.dart';
 import 'edit_profile_screen.dart';
 import 'manage_ads_screen.dart';
@@ -18,6 +19,15 @@ class UserProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: const Text('User Profile'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.logout),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginScreen()),
+              ),
+            ),
+          ],
           leading: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () => Navigator.push(
@@ -89,16 +99,6 @@ class UserProfileScreen extends StatelessWidget {
                       'Chat with Buyer', Colors.blue, const BuyerChatScreen()),
                   _buildListTile(context, Icons.timelapse, 'Shop Open Schedule',
                       Colors.blue, const ShopOpenScheduleScreen()),
-                  Card(
-                    elevation: 2,
-                    child: ListTile(
-                        leading: const Icon(Icons.logout_outlined),
-                        title: const Text(
-                          'Logout',
-                          style: TextStyle(color: Colors.blue),
-                        ),
-                        onTap: () {}),
-                  ),
                 ],
               ),
             ),

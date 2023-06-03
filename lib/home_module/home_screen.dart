@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(80),
                           border: Border.all(
-                            color: Colors.amber, // Set the color of the border
+                            color: Colors.blue, // Set the color of the border
                             width: 2, // Set the width of the border
                           ),
                         ),
@@ -74,8 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 // Add a clear button to the search bar
                                 suffixIcon: Container(
                                   decoration: const BoxDecoration(
-                                    color: Colors
-                                        .amber, // Set the background color
+                                    color:
+                                        Colors.blue, // Set the background color
                                     shape: BoxShape
                                         .circle, // Optional: Set the shape of the button
                                   ),
